@@ -1,0 +1,62 @@
+.callout[data-callout="toc"],
+.callout[data-callout^="toc?"],
+.callout[data-callout="toc#master"],
+.callout[data-callout^="toc#master?"] {
+	--callout-color: 0, 191, 188;
+	--callout-icon: lucide-list-tree;
+}
+
+.auto-toc-override-setting {
+	align-items: flex-start;
+	border-top: 1px solid var(--background-modifier-border);
+	gap: 1rem;
+}
+
+.auto-toc-override-setting .setting-item-info {
+	flex: 0 0 14rem;
+	min-width: 10rem;
+}
+
+.auto-toc-override-setting .setting-item-control {
+	display: flex;
+	flex: 1 1 auto;
+	gap: 0.5rem;
+	justify-content: flex-end;
+	min-width: 0;
+	flex-wrap: wrap;
+}
+
+.auto-toc-override-setting .setting-item-control input[type="text"] {
+	flex: 1 1 18rem;
+	min-width: 12rem;
+	max-width: 100%;
+}
+
+.auto-toc-override-setting .setting-item-control select {
+	flex: 0 1 auto;
+	max-width: 12rem;
+}
+
+.auto-toc-override-setting .setting-item-control button {
+	flex: 0 0 auto;
+}
+
+@media (max-width: 700px) {
+	.auto-toc-override-setting {
+		display: block;
+	}
+
+	.auto-toc-override-setting .setting-item-info {
+		margin-bottom: 0.5rem;
+	}
+
+	.auto-toc-override-setting .setting-item-control {
+		justify-content: stretch;
+	}
+
+	.auto-toc-override-setting .setting-item-control input[type="text"],
+	.auto-toc-override-setting .setting-item-control select {
+		flex-basis: 100%;
+		max-width: none;
+	}
+}

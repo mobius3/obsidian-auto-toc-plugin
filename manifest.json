@@ -1,0 +1,9 @@
+{
+	"id": "auto-toc",
+	"name": "Auto TOC",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Generate and update real table of contents inside callouts.",
+	"author": "Leonardo Guilherme",
+	"isDesktopOnly": false
+}
